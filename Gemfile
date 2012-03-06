@@ -20,6 +20,10 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :test, :development do
+  gem 'rspec-rails', '~> 2.5'
+end
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
@@ -35,6 +39,9 @@ gem 'jquery-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :test do
+  gem 'cucumber-rails', '1.0.6'
+  gem 'capybara'
+  gem 'database_cleaner'
   # Pretty printed test output
   gem 'turn', '0.8.2', :require => false
 end
