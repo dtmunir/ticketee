@@ -46,4 +46,5 @@ group :test do
   # Pretty printed test output
   gem 'turn', '0.8.2', :require => false
   gem 'factory_girl'
+  gem 'email_spec'
 end
